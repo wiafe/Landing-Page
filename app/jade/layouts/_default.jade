@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title landing-page
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    meta(content='3 days', name='revisit-after')
+
+    // build:css /styles/main.css
+    link(href='/styles/main.css', rel='stylesheet')
+    script(src='http://use.typekit.net/bxc7xbp.js')
+    script try{Typekit.load();}catch(e){}
+    // endbuild
+
+  body(class=page)
+    include nav
+    include header
+    include article
+
+    // build:js /scripts/main.js
+    
+    script(src='/bower_components/jquery/dist/jquery.js')
+    
+    script(src='/scripts/main.js')
+    // endbuild
